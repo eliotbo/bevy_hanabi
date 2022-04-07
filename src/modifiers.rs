@@ -230,6 +230,12 @@ impl UpdateModifier for AccelModifier {
     }
 }
 
+#[derive(Default, Clone, Copy)]
+pub struct CollisionParams {
+    /// dummy
+    pub dummy: Vec3,
+}
+
 /// Parameters for the components making the force field.
 #[derive(Clone, Copy)]
 pub struct ForceFieldParam {
